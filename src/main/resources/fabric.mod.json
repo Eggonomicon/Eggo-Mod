@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "eggomod",
+  "version": "${version}",
+
+  "name": "Eggo Mod",
+  "description": "My Mod Template",
+  "authors": [
+    "Eggonomicon"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/eggomod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.eggonomicon.eggomod.EggoMod"
+    ]
+  },
+  "mixins": [
+    "eggomod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
